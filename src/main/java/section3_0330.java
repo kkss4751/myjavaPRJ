@@ -84,5 +84,6 @@ public class section3_0330 {
             System.out.printf("5의 배수입니다.");
         }
 
+
     }
 }

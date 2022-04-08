@@ -1,31 +1,23 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        int a, b;
-        int result;
+    /*public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        a = sc.nextInt();
-        b = sc.nextInt();
+        int a = sc.nextInt();
 
-        if (a % 2 == 0) {
-            System.out.print("짝수");
-        } else {
-            System.out.print("홀수");
+        for (int b = 1; b <= a; b++ ){
+            if( b % 3 != 0) {
+                System.out.print(b + " ");
+            }
         }
-        System.out.print("+");
-        if (b % 2 == 1) {
-            System.out.print("홀수");
-        } else {
-            System.out.print("짝수");
+    }*/
+    public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            int n = sc.nextInt();
+
+            for(int a = 1; a <= n; a++){
+                System.out.print(a);
+                System.out.printf(" ");
+            }
         }
-        System.out.print("=");
-        //resut
-        result = a+b;
-        if ((a+b) % 2 == 0) {
-            System.out.print("짝수");
-        } else {
-            System.out.print("홀수");
-        }
-    }
 }

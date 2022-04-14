@@ -4,10 +4,13 @@ public class Ex00_test {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        int hap = 0;
 
-        for(int a = 1; a <= n; a++){
-            System.out.print(a);
-            System.out.printf(" ");
+        for (int one = 1; one <= n; one++){
+            if (one % 2 == 0) {
+                hap = hap + one;
+            }
         }
+        System.out.println(hap);
     }
 }

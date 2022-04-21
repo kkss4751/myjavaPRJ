@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class respaso {
     public static void main(String[] args) {
 //        System.out.println("hello my first java");
@@ -76,5 +78,59 @@ public class respaso {
                 System.out.printf("%d x %d = %d\n",dan,n,dan*n);
             }
         }*/
+        /*Scanner s = new Scanner(System.in);
+        int b= s.nextInt();
+
+        for(int line = 1; line <= b; line ++) {
+            for (int star = 1; star <= line; star++ ){
+                System.out.printf("*");
+            }
+            System.out.println("");
+        }*/
+        /*for(int line = 5; line >= 1; line--) {
+            for ( int star = 1; star <= line; star++){
+                System.out.printf("*");
+            }
+            System.out.printf("\n");
+        }*/
+        /*Scanner s = new Scanner(System.in);
+        System.out.printf("숫자 입력");
+        int a = s.nextInt();
+
+        for( int b = a; b >= 1; b--){
+            for ( int c = 1; c <= b; c++){
+                System.out.printf("*");
+            }
+            System.out.printf("\n");
+        }*/
+        /*int hap = 0;
+
+        for (int i = 50; i < 101; i++) {
+            if ( i % 3 == 0 || i % 7== 0 || i% 11== 0) {
+                hap += 0;
+            }
+            hap += i;
+        }*/
+       /* for(int i = 3; i < 9; i++) {
+            for(int j = 2; j < 7; j++) {
+                System.out.println(i + "X" + j + "=" + (i*j));
+            }
+            System.out.println();
+        }*/
+
+                Scanner input = new Scanner(System.in);
+                int x;
+                int y;
+                int sum;
+
+                System.out.print("첫번째 숫자를 입력하시오 : ");
+                x = input.nextInt();
+
+                System.out.print("두번째 숫자를 입력하시오 : ");
+                y = input.nextInt();
+
+                sum = x + y;
+
+                System.out.println(sum);
     }
 }

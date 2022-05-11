@@ -1,13 +1,115 @@
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Array복습 {
     public static void main(String[] args) {
 
-        int a,b;
+        List<Map<String, String>> list = new ArrayList<>();
+
+        Map<String, String> map = new HashMap<>();
+
+        //이협건 정보 저장하기
+        map.put("name", "이협건");
+        map.put("email", "hglee67@kopo.ac.kr");
+        map.put("addr", "서울");
+        map.put("dept", "데이터분석과");
+
+        list.add(map); // 앞서 등록한 이협건 정보를 list에 저장하기
+
+        map = null; // 메모리에 데이터르 지우는 방식으로 이협건 정보를 삭젷기
+
+        //기존 map 객체의 값을 새롭게 생성하기
+        map = new HashMap<>();
+
+        //홍길동 정보 저장하기
+        map.put("name", "홍길동");
+        map.put("email", "gdhong@kopo.ac.kr");
+        map.put("addr", "경기");
+        map.put("dept", "시각디자인과");
+
+        list.add(map); //앞서 등록한 홍길동 정보를 list에 젖아하기
+        map = null; // 메모리에 데이터를 지우는 방식으로 이협건 정보를 삭제하기
+
+        int listSize = list.size();
+
+        for(int i = 0; i < listSize; i++){
+            Map<String, String> rMap = list.get(i);
+            System.out.println("name : " + rMap.get("name"));
+            System.out.println("email : " + rMap.get("email"));
+            System.out.println("addr : " + rMap.get("addr"));
+            System.out.println("dept : " + rMap.get("dept"));
+            System.out.println("---------------------------");
+        }
+
+        /*Map<String, String> map = new HashMap<>();
+
+        map.put("name", "이협건" );
+        map.put("email", "hglee67@kopo.ac.kr");
+        map.put("dept", "데이터분석과");
+
+        System.out.println("----------------------------------");
+
+        System.out.println("name : " + map.get("name"));
+        System.out.println("email : " + map.get("email"));
+        System.out.println("dept : " + map.get("dept"));
+
+        System.out.println("----------------------------------");*/
+
+        /*List<String> pList = new ArrayList<>();
+        pList.add("홍길동");
+        pList.add("이협건");
+        pList.add("고길동");
+        pList.add("이정훈");
+
+        Iterator<String> it = pList.iterator();
+        while (it.hasNext()){
+            String name = it.next();
+            System.out.println("이름 : "+ name);
+        }*/
+//        pList.forEach(name -> System.out.println("name : " + name));
+        /*for (String name : pList){
+            System.out.println("이름 : " + name);
+        }*/
+
+       /* Scanner s = new Scanner(System.in);
+        int aa[] = new int[4];
+        int hap = 0;
+        for (int i = 0; i <=3; i++ ){
+            System.out.printf("%d번쨰 숫자를입력하세요 :", i+1);
+            aa[i] = s.nextInt();
+        }hap = aa[0] + aa[1] + aa[2] + aa[3];
+        System.out.printf("합계 ==> %d", hap);*/
+
+        /*ArrayList al = new ArrayList();
+        al.add("one");
+        al.add("two");
+        al.add("tree");
+        for (int i = 0; i < al.size(); i++){
+            System.out.println(al.get(i));
+        }
+        List<String> list = new ArrayList<>();
+        list.add("alex");
+        list.add("benjamin");
+        list.add("jorge");
+        list.add("wapo");
+
+        for (int i = 0; i < list.size(); i++){
+            System.out.println("이름 :" + list.get(i));
+        }
+
+        int aa[] = {10,20,30,40,50};
+        int count,size;
+        count = aa.length;
+        size = count*Integer.BYTES;
+        System.out.printf("aa[]요소의 개수는 %d개 이고 \n",count);
+        System.out.printf("aa[]요소의 크기는 %d바이트 입니다 \n", size);*/
+
+        /*int a,b;
         Scanner sc = new Scanner(System.in);
         a= sc.nextInt();
         b=sc.nextInt();
-
 
         if (a < b){
             System.out.printf("<");
@@ -17,8 +119,7 @@ public class Array복습 {
         }
         if (a == b){
             System.out.printf("==");
-        }
-
+        }*/
 /*
         int a, b;
         int hap;

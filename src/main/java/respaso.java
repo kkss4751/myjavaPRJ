@@ -131,7 +131,7 @@ public class respaso {
 
                 System.out.println(sum);
     */
-        int month = 8;
+       /* int month = 8;
         String monthString = "";
         switch (month) {
             case 1:  monthString = "January";
@@ -161,6 +161,53 @@ public class respaso {
             default: monthString = "Invalid month";
                 break;
         }
-        System.out.println(monthString);
+        System.out.println(monthString);*/
+       /* Scanner sc = new Scanner(System.in);
+        System.out.print("숫자를 입력하세요");
+        int a = sc.nextInt();
+
+        if( a % 3 == 0 && a % 5 == 0){
+            System.out.println("3과 5의 배수입니다,");
+        }else if ( a % 3 == 0) {
+            System.out.println("3의 배수입니다");
+        }else if ( a % 5 == 0) {
+            System.out.println("5의 배수입니다");
+        }else System.out.println("아무것도 아닙니다");*/
+
+        /*Scanner ss= new Scanner(System.in);
+        System.out.println("숫자르 입력하세요");
+        int b = ss.nextInt();
+        int hap = 0;
+
+        for (int c = 1; c <= b; c++){
+            if ( c % 3 == 0 || c % 5 == 0) {
+            }else {
+                hap += c;
+            }
+        }
+        System.out.println(hap);*/
+
+     /*   for( int a = 2; a <= 9; a++){
+            for (int b = 2; b <= 8; b++ ){
+                System.out.printf("%d x %d = %d ",b, a, b*a);
+            }
+            System.out.println("");
+        }*/
+        for ( int a = 2; a <=6; a++){
+            for ( int dan = 3; dan <= 8; dan++){
+                System.out.printf ( "%d X %d = %d ", dan, a, dan*a);
+            }
+            System.out.println ("");
+        }
+        /*int hap = 0;
+        for ( int a = 50; a <= 100; a++) {
+            if (a % 3 == 0 || a % 7 == 0 || a % 11 == 0) {
+            } else {
+                hap += a;
+            }
+        }
+            System.out.printf("%d",hap);*/
+
+
     }
 }

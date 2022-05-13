@@ -1,9 +1,8 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Scanner;
 
 public class class13 {
     public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
+        /*List<String> list = new ArrayList<>();
 
         list.add("이협건");
         list.add("홍길동");
@@ -14,9 +13,10 @@ public class class13 {
 
         for ( int i = 0; i < listSize; i++){
             System.out.println("이름 :" + list.get(i));
-        }
+        }*/
 
-        /*int aa[] = {10, 20, 30, 40, 50};
+        /*
+        int aa[] = {10, 20, 30, 40, 50};
         int count, size;
 
         count = aa.length;
@@ -28,17 +28,20 @@ public class class13 {
         for ( int i = 0; i < aa.length; i++) {
             System.out.println("aa[" + i + "] :" + aa[i]);
         }*/
-    }
-       /* Scanner s = new Scanner(System.in);
+
+
+        Scanner s = new Scanner(System.in);
         int[] aa = new int[4];
-        int hap;
+        int hap=0;
 
         for (int i = 0; i < 4; i++) {
             System.out.printf("%d번째 숫자를 입력하세요", i + 1);
             aa[i] = s.nextInt();
+            System.out.println(aa[i]);
         }
         hap = aa[0] + aa[1] + aa[2] + aa[3];
-        System.out.println("합계 : " + hap);*/
+        System.out.println("합계 : " + hap);
+    }
 
 //        System.out.printf("1번째 숫자를 입력하세요");
 //        aa[0] = s.nextInt();

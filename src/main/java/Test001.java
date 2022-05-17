@@ -16,8 +16,8 @@ public class Test001 {
 
 
 
-        for (int i=2; i>0 ; i--) { //
-            for (int j=2; j >=i; j--) {
+        for (int i=2; i>0 ; i--) { //  총 2  1 번 반복
+            for (int j=2; j >=i; j--) {   //
                 System.out.print(" ");
             }
             for (int j=1; j<=i*2-1 ; j++) {

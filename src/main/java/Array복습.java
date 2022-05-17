@@ -1,12 +1,35 @@
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 
 public class Array복습 {
     public static void main(String[] args) {
 
-        List<Map<String, String>> list = new ArrayList<>();
+        List<String>list = new ArrayList<>();
+        list.add("김연");
+        list.add("이정훈");
+        list.add("김다운");
+        list.add("김원집");
+
+        int listSize = list.size();
+
+        for (int i = 0; i<listSize; i++){
+            System.out.println("이름:"+list.get(i));
+        }
+        for(String name : list){
+            System.out.println("이름 : " + name);
+        }
+        list.forEach(name -> System.out.println("name : " + name));
+
+        Iterator<String> it = list.iterator();
+        while(it.hasNext()){
+            String name = it.next();
+            System.out.println("이름 :" + name);
+        }
+
+
+
+       /* List<Map<String, String>> list = new ArrayList<>();
 
         Map<String, String> map = new HashMap<>();
 
@@ -41,7 +64,7 @@ public class Array복습 {
             System.out.println("addr : " + rMap.get("addr"));
             System.out.println("dept : " + rMap.get("dept"));
             System.out.println("---------------------------");
-        }
+        }*/
 
         /*Map<String, String> map = new HashMap<>();
 

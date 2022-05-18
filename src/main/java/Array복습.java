@@ -19,7 +19,7 @@ public class Array복습 {
         for(String name : list){
             System.out.println("이름 : " + name);
         }
-        list.forEach(name -> System.out.println("name : " + name));
+        list.forEach(name -> System.out.println("이름은 : " + name));
 
         Iterator<String> it = list.iterator();
         while(it.hasNext()){

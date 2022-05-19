@@ -1,6 +1,8 @@
 public class class0518 {
     public static void main(String[] args) {
 
+
+
         /** toUpperCase(), toLowerCase(), trim() **/
 
         String str = " 한글 ABCD efgh ";

@@ -1,11 +1,27 @@
+import java.util.Scanner;
+import java.util.Stack;
+
 public class class0518 {
     public static void main(String[] args) {
+
+                Scanner sc = new Scanner(System.in);
+
+                int n = sc.nextInt();
+
+                Stack<Integer> stack = new Stack<>();
+
+                for (int i = 0; i <n; i++) {
+                    stack.push(sc.nextInt());
+                }
+                for (int i = 0; i <n ; i++) {
+                    System.out.printf("%d ",stack.pop());
+                }
 
 
 
         /** toUpperCase(), toLowerCase(), trim() **/
 
-        String str = " 한글 ABCD efgh ";
+        /*String str = " 한글 ABCD efgh ";
 
         System.out.println("원 문자열 ==> [" + str + "]");
         System.out.println("대문자로 ==> [" + str.toUpperCase() + "]");
@@ -13,7 +29,7 @@ public class class0518 {
         System.out.println("공백제거 ==> [" + str.trim() + "]");    // 가운데 공백말고 앞뒤 공백만 제거.
 
         System.out.println("전체공백제거 ==> [" + str.replaceAll(" ",""));
-
+*/
         /** replace() , substring() **/
 
         /*Scanner s = new Scanner(System.in);

@@ -362,8 +362,5 @@ public class javaprograming_inflearn {
            }
         }
         System.out.println("계산기를 종료합니다.");
-
-
-
     }
 }

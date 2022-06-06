@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class javaprograming_inflearn {
     public static void main(String[] args) {
         /** 화면에 내용 출력하기 **/
@@ -247,6 +249,7 @@ public class javaprograming_inflearn {
          *     }
          * **/
 
+/*
         int num = 0;
         while ( true ) {
             num ++;
@@ -271,6 +274,94 @@ public class javaprograming_inflearn {
             System.out.println(number); // 홀수 일 때만 출력
         }
         System.out.println("while문 종료");
+*/
+        /** 사용자 입력받기
+         *
+         * import java.util.Scanner; //
+         *
+         * **/
+
+/*
+        Scanner sc = new Scanner(System.in); // sc 이름의 스캐너를 만듬
+
+        System.out.println("숫자를 입력하고 엔터를 치세요."); // 입력하라고 알려주기
+        int num = sc.nextInt(); // 사용자가 입력한값을 변수에 넣어주겠다.
+
+        System.out.println("당신이 입력한 숫자는 : " + num + "입니다"); // 입력받은 값을 출력문에 넣어줌
+*/
+        /** 사용자 입력받아 사칙연산 결과 출력하기
+         *
+         * **/
+
+/*
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("첫번째 숫자를 입력하세요");
+        int num1 = sc.nextInt();
+
+        System.out.println("두번째 숫자를 입력하세요");
+        int num2 = sc.nextInt();
+
+        int sum = num1 + num2;
+        System.out.println( "더하기" + sum); // 결과 출력
+
+        int sum1 = num1 - num2;
+        System.out.println("빼기" + sum1);
+
+        int sum2 = num1 * num2;
+        System.out.println("곱하기" + sum2);
+
+        int sum3 = num1 / num2;
+        System.out.println("나누기" + sum3);
+
+        int sum4 = num1 % num2;
+        System.out.println("나머지" + sum4);
+*/
+
+        /** 계산기 프로그램 만들기
+         *
+         * 사용자가 원할때 종료하고 그전까지는 계속 실행되는 구조
+         *
+         * **/
+
+        Scanner sc = new Scanner(System.in);
+
+
+        while (true) {
+            System.out.println("메뉴를 선택하세요");
+            System.out.println("<1> 더하기 <2> 빼기 <3> 곱하기 <4> 나누기 <5> 나머지 <0> 종료"); //반복이 되면서 계속 출력
+
+            int menu = sc.nextInt(); // 선택할수있게 입력을 받아야함.
+
+           if ( menu == 0) {
+                break;
+            }else {
+               if ( menu > 5 ) {
+                   System.out.println("메뉴를 잘못 선택했습니다.");
+                   continue; //아래는 더 이상 수행하지 않고 위로 올라감
+               }
+
+               //사칙연산은 기능 수정
+               System.out.println("첫번째 숫자를 입력하세요");
+               int num1 = sc.nextInt();
+
+               System.out.println("두번째 숫자를 입력하세요");
+               int num2 = sc.nextInt();
+
+               if ( menu == 1) {
+                   System.out.println( num1 + num2);
+               } else if ( menu == 2) {
+                   System.out.println( num1 - num2);
+               }else if ( menu == 3) {
+                   System.out.println(num1 * num2);
+               }else if ( menu == 4) {
+                   System.out.println(num1 / num2);
+               }else if ( menu == 5){
+                   System.out.println(num1 % num2);
+               }
+           }
+        }
+        System.out.println("계산기를 종료합니다.");
 
 
 

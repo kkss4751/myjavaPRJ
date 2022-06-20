@@ -1,3 +1,5 @@
+package polytec1_1;
+
 import java.util.Scanner;
 
 public class Test {

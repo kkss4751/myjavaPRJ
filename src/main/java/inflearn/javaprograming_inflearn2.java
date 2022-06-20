@@ -1,6 +1,8 @@
+package inflearn;
+
 import java.util.Scanner;
 
-public class javaprograming_inflearn {
+public class javaprograming_inflearn2 {
     public static void main(String[] args) {
         /** 화면에 내용 출력하기 **/
 

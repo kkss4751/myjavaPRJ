@@ -1,3 +1,5 @@
+package polytec1_1;
+
 public class array {
     public static void main(String[] args) {
         /*String[] classGroup = {"최진혁","최유빈","한아름","이고잉"};

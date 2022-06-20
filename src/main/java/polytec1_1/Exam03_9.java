@@ -1,3 +1,5 @@
+package polytec1_1;
+
 public class Exam03_9 {
     public static void main(String[] args) {
         int a, b, c, d;

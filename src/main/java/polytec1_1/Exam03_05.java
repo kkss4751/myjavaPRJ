@@ -1,3 +1,5 @@
+package polytec1_1;
+
 public class Exam03_05 {
     public static void main(String[] args) {
         System.out.printf("%d\n", 123);

@@ -1,3 +1,8 @@
+package polytec1_1;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class Array복습 {
     public static void main(String[] args) {
 
@@ -64,7 +69,7 @@ public class Array복습 {
             System.out.println("---------------------------");
         }*/
 
-        /*Map<String, String> map = new HashMap<>();
+        Map<String, String> map = new HashMap<>();
 
         map.put("name", "이협건" );
         map.put("email", "hglee67@kopo.ac.kr");
@@ -76,7 +81,7 @@ public class Array복습 {
         System.out.println("email : " + map.get("email"));
         System.out.println("dept : " + map.get("dept"));
 
-        System.out.println("----------------------------------");*/
+        System.out.println("----------------------------------");
 
         /*List<String> pList = new ArrayList<>();
         pList.add("홍길동");

@@ -1,3 +1,5 @@
+package polytec1_1;
+
 public class estrella {
     public static void main(String[] args) {
         int hap = 0;

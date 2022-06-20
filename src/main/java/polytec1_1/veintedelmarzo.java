@@ -1,3 +1,5 @@
+package polytec1_1;
+
 public class veintedelmarzo {
     public static void main(String[] args) {
                                        // 문자열 사용 예
